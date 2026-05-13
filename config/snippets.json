@@ -1,0 +1,7 @@
+{
+  "snippets": [
+    { "trigger": "my email", "expansion": "santosh24x@gmail.com" },
+    { "trigger": "sign off", "expansion": "Thanks and regards,\nSantosh" },
+    { "trigger": "lpu", "expansion": "Lovely Professional University" }
+  ]
+}

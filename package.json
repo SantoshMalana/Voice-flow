@@ -1,0 +1,45 @@
+{
+  "name": "voiceflow",
+  "version": "0.0.1",
+  "description": "VoiceFlow — AI voice dictation desktop app",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "npx electron-vite dev",
+    "build": "electron-vite build && npx @electron/packager . VoiceFlow --platform=win32 --arch=x64 --out=dist --overwrite --icon=voiceflow.ico",
+    "preview": "electron-vite preview",
+    "lint": "eslint . --ext ts,tsx"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "sharp": "^0.34.5",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.1",
+    "active-win": "^8.1.0",
+    "better-sqlite3": "^11.1.2",
+    "dotenv": "^17.4.2",
+    "groq-sdk": "^1.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "build": {
+    "appId": "com.voiceflow.app",
+    "productName": "VoiceFlow",
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        "dir"
+      ]
+    }
+  }
+}

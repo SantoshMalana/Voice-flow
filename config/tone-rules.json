@@ -1,0 +1,10 @@
+{
+  "rules": [
+    { "app": "Code", "tone": "technical", "description": "VS Code — technical, concise" },
+    { "app": "chrome", "tone": "neutral", "description": "Chrome — neutral" },
+    { "app": "OUTLOOK", "tone": "formal", "description": "Outlook — formal" },
+    { "app": "WhatsApp", "tone": "casual", "description": "WhatsApp — casual, short" },
+    { "app": "Notion", "tone": "markdown", "description": "Notion — markdown formatted" }
+  ],
+  "default": "clean"
+}
